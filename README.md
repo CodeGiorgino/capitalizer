@@ -1,6 +1,6 @@
 # Capitalizer Plugin
 
-A simple plugin that allows for capitalization of selected text.
+A simple micro-editor plugin that allows to capitalize selected text.
 
 **Installation:** run `plugin install capitalizer` and restart Micro.
 
