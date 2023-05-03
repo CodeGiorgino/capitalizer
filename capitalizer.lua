@@ -33,8 +33,6 @@ function low(bp)
 		return true
 	end
 
-	local selection = c:GetSelection()
-
 	-- Call main function
 	replaceText(bp, c, false)	
 end
@@ -56,8 +54,6 @@ function up(bp)
 	if c:HasSelection() == false then
 		return true
 	end
-
-	local selection = c:GetSelection()
 
 	-- Call main function
 	replaceText(bp, c, true)	
