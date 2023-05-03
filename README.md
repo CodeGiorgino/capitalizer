@@ -14,5 +14,5 @@ The keybindings below are set by the plugin.
 
 | Command   | Keybinding(s)              | What it does                                                                                | API for `bindings.json`               |
 | :-------  | :------------------------- | :------------------------------------------------------------------------------------------ | :------------------------------------ |
-| `toUpper` | Alt-p                      | Transform text to uppercase                                                                 | `micro-capitalizer.up`                |
-| `toLower` | Alt-o                      | Transform text to lowercase																   | `micro-capitalizer.low`               |
+| `toUpper` | Alt-p                      | Transform text to uppercase                                                                 | `capitalizer.up`                      |
+| `toLower` | Alt-o                      | Transform text to lowercase																   | `capitalizer.low`                     |
