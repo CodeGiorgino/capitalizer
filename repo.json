@@ -1,0 +1,15 @@
+[
+	{
+		"Name": "capitalizer",
+		"Description": "Capitalizer plugin for Micro",
+		"Tags": ["capitalize", "text"],
+        "Website": "",
+		"Versions": [
+			{
+            {
+                "Version": "1.1.0",
+                "Url": ""
+            }
+		]
+	}
+]
