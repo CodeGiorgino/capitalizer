@@ -6,7 +6,7 @@ A simple micro-editor plugin that allows to capitalize selected text.
 
 ## Basics
 
-Select the text you want to capitalize, then press 
+Select the text you want to capitalize, then press `Alt-p` to transform text to uppercase, or `Alt-o` to transform text to lowercase.
 
 ### Commands and Keybindings
 
