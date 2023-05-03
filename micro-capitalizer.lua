@@ -8,16 +8,16 @@ local util = import("micro/util")
 
 function init()
 	-- Plugin initialization
-	config.RegisterCommonOption("capitalizer", "enable", true)
+	config.RegisterCommonOption("micro-capitalizer", "enable", true)
 
 	-- KeyBindings initialization
-	config.TryBindKey("Alt-o", "lua:capitalizer.low", false)
-	config.TryBindKey("Alt-p", "lua:capitalizer.up", false)
+	config.TryBindKey("Alt-o", "lua:micro-capitalizer.low", false)
+	config.TryBindKey("Alt-p", "lua:micro-capitalizer.up", false)
 end
  
 function low(bp)
 	-- Check if the plugin is enabled 
-	if bp.Buf.Settings["capitalizer.enable"] == false then
+	if bp.Buf.Settings["micro-capitalizer.enable"] == false then
 		return true
 	end
 
@@ -41,7 +41,7 @@ end
 
 function up(bp)
 	-- Check if the plugin is enabled
-	if bp.Buf.Settings["capitalizer.enable"] == false then
+	if bp.Buf.Settings["micro-capitalizer.enable"] == false then
 		return true
 	end
 
