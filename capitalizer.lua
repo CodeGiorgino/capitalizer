@@ -11,11 +11,11 @@ function init()
 	config.RegisterCommonOption("capitalizer", "enable", true)
 
 	-- KeyBindings initialization
-	config.TryBindKey("Alt-o", "lua:capitalizer.low", false)
-	config.TryBindKey("Alt-p", "lua:capitalizer.up", false)
+	config.TryBindKey("Alt-o", "lua:capitalizer.toLower", false)
+	config.TryBindKey("Alt-p", "lua:capitalizer.toUpper", false)
 end
  
-function low(bp)
+function toLower(bp)
 	-- Check if the plugin is enabled 
 	if bp.Buf.Settings["capitalizer.enable"] == false then
 		return true
@@ -37,7 +37,7 @@ function low(bp)
 	replaceText(bp, c, false)	
 end
 
-function up(bp)
+function toUpper(bp)
 	-- Check if the plugin is enabled
 	if bp.Buf.Settings["capitalizer.enable"] == false then
 		return true
@@ -60,7 +60,7 @@ function up(bp)
 end
 
 -- Main function
-function replaceText(bp, c, toUpper)
+function replaceText(bp, c, caseUpper)
 	local a, b = nil, nil
 
 	-- Cursor position initialization
@@ -78,7 +78,7 @@ function replaceText(bp, c, toUpper)
 
 	local modifiedSelection
 
-	if toUpper == true then
+	if caseUpper == true then
 		-- Transform text to uppercase
 		modifiedSelection = string.upper(selection)
 	else
